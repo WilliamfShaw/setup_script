@@ -40,13 +40,20 @@ puts "========================"
 system "brew install rbenv ruby-build"
 system "rbenv install 2.3.1"
 system "rbenv global 2.3.1"
+
+puts "========================"
+puts "INSTALLING GEMS"
+puts "========================"
+
+system "gem install pry"
 system "gem install bundler"
+system "gem install rails"
 
 puts "========================"
 puts "SETTING UP BASH PROFILE"
 puts "========================"
 
-system 'cat > ~/.bash_profile_test << EOT
+system 'cat > ~/.bash_profile << EOT
 if which rbenv > /dev/null; then eval "\$(rbenv init -)"; fi
 
 export PATH="\$PATH:/usr/local/bin"
@@ -116,4 +123,5 @@ puts "========================"
 puts "CLEANUP :)"
 puts "========================"
 
+system "source ~/.bash_profile"
 system "brew cleanup"

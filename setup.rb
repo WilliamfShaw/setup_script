@@ -48,14 +48,6 @@ system "rbenv install 2.3.1"
 system "rbenv global 2.3.1"
 
 puts "========================"
-puts "INSTALLING GEMS"
-puts "========================"
-
-system "gem install pry"
-system "gem install bundler"
-system "gem install rails"
-
-puts "========================"
 puts "SETTING UP BASH PROFILE"
 puts "========================"
 

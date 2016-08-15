@@ -34,6 +34,12 @@ system "brew install postgres"
 system "brew services start postgresql"
 
 puts "========================"
+puts "INSTALLING GIT"
+puts "========================"
+
+system "brew install git"
+
+puts "========================"
 puts "INSTALLING RBENV"
 puts "========================"
 
@@ -118,12 +124,6 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 EOT
 '
-
-puts "========================"
-puts "INSTALLING GIT"
-puts "========================"
-
-system "brew install git"
 
 puts "========================"
 puts "CLEANUP :)"

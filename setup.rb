@@ -120,6 +120,12 @@ EOT
 '
 
 puts "========================"
+puts "INSTALLING GIT"
+puts "========================"
+
+system "brew install git"
+
+puts "========================"
 puts "CLEANUP :)"
 puts "========================"
 
